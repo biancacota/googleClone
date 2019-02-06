@@ -1,0 +1,49 @@
+
+#leftlinks a{
+	float:left;
+	display: inline-block;
+	width: 3%;
+	padding:1%;
+	margin: 0;
+}
+
+.topbox a{
+	float: right;
+	display: inline-block;
+	width: 3%;
+	padding:1%;
+	margin: 0;
+}
+.topbox img{
+	float:right;
+}
+
+
+a{
+	text-decoration: none;
+	font-family: sans-serif;
+	color:black;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+#bottomleft{
+	float:left;
+	width: 3%;
+	padding:1%;
+	margin:0;
+	display:inline;
+}
+#bottomright{
+	float: right;
+	width: 3%;
+	padding:0;
+	margin: 0;
+}
+
+.footer{
+	margin: 400px;
+}
