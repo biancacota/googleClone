@@ -1,49 +1,166 @@
+ body{
+ 	margin:0;
+ }
 
-#leftlinks a{
-	float:left;
-	display: inline-block;
-	width: 3%;
-	padding:1%;
-	margin: 0;
+
+#toolbar{
+	height: 60px;
 }
 
-.topbox a{
-	float: right;
-	display: inline-block;
-	width: 3%;
-	padding:1%;
-	margin: 0;
-}
-.topbox img{
-	float:right;
-}
-
-
-a{
+a {
 	text-decoration: none;
+	color: #636363;
 	font-family: sans-serif;
-	color:black;
+	font-size: 12px;
 }
 
-a:hover{
+#toolbar a{
+	text-decoration: none;
+	color: #636363;
+	font-family: sans-serif;
+	font-size: 14px;
+	padding: 5px;	
+}
+
+#toolbar a:hover{
 	text-decoration: underline;
 }
 
+.top-left a{
+	float-left;
+}
 
-#bottomleft{
+.top-left{
 	float:left;
-	width: 3%;
-	padding:1%;
-	margin:0;
-	display:inline;
-}
-#bottomright{
-	float: right;
-	width: 3%;
-	padding:0;
-	margin: 0;
+	margin: 21px;
 }
 
-.footer{
-	margin: 400px;
+.top-right{
+	float:right;
+	margin: 12.5px;
+}
+
+.top-right img{
+	position: relative;
+	top:4px;
+	padding: 0 5px;
+}
+
+.top-right button{
+	background: dodgerblue;
+	color: white;
+	font-weight:bold;
+	border: none;
+	width: 70px;
+	height: 35px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+#dropdown-container{
+	display: none;
+	border-style: solid;
+	height: 600px;
+	width: 350px;
+	text-align: center;
+	margin: 20px;
+	color: lightgrey;
+}
+
+#dropdown-container section{
+	padding: 10px;
+	display: block;
+}
+
+#dropdown-container section a{
+	display:inline-block;
+	margin: 10px;
+}
+
+
+#dropdown-container section img{
+	display: block;
+	margin-bottom: 10px;
+}
+
+main{
+ 	clear:both;
+}
+
+#main-content{
+	text-align:center;
+	margin-top: 100px;
+}
+
+#google-logo{
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+}
+
+#search-bar{
+	width: 526px;
+	margin: 20px auto;
+	position: relative;
+}
+
+#search-input{
+	width: 450px;
+	height: 35px;
+	font-size: 16px;
+	padding: 0 10px;
+	background-color: #f1f1f1;
+	border-radius: 25px;
+}
+
+#microphone img{
+		width: 14px;
+	position: absolute;
+	bottom: 9px;
+	right: 20px;
+}
+
+.button-section button{
+	border: none;
+	margin: 0 5px;
+	padding: 10px 15px;
+	background-color: #f1f1f1;
+	font-size: 12.5px;
+	font-weight: bold;
+	color: #636363;
+	cursor: pointer;
+}
+
+#main-footer{
+	height:42px;
+	bottom:0;
+	background-color: #f4f4f4;
+	position:fixed;
+	width: 100%;
+}
+
+#main-footer a{
+	text-decoration: none;
+	color: #636363;
+	font-family: sans-serif;
+	font-size: 14px;
+	padding: 20px;
+	bottom: 0;
+	height:42px;
+	margin-left: 16px;
+}
+
+#main-footer a:hover{
+	text-decoration: underline;
+}
+
+.footer-left{
+  float:left;
+  padding: 16px;
+
+}
+
+.footer-right{
+  float:right;
+  padding: 16px;
 }

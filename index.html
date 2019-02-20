@@ -3,57 +3,85 @@
 <head>
 	<title>Google Clone</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-	<style type="text/css">
-	
-	</style>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/index.js"></script>
 </head>
 
 <body>
-	<header>
-	<!-- navigation bar -->
-	<div class="topbox">
-		<nav id="leftlinks">
-			<a href="https://about.google/intl/en/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" target="_blank">About</a>
-			<a href="https://store.google.com/?utm_source=hp_header&utm_medium=google_oo&utm_campaign=GS100042">Store</a>
-		</nav>
+	<header id="toolbar">
+	<nav>
+		<span class="top-left">
+			<a href="#">About</a>
+			<a href="#">Store</a>
+		</span>
 
-		<nav id="rightlinks">
-			<a href="https://accounts.google.com/signin">Gmail</a>
-			<a href="https://www.google.com/imghp?hl=en&tab=wi">Images</a>
-			<img src="images/google-apps.png" name="google-apps">
-			<img src="images/google-notifications.png">
-			<a href="default.asp" target="_blank"><button>Sign In</button></a>	
-		</nav>
-	
-		</div>	
+		<span class="top-right">
+			<a href="#">Gmail</a>
+			<a href="#">Images</a>
+			<a href="#" id="apps"> <img src="images/google-apps.png" width="20px" height="20px" alt="goolge-apps"name="google-apps"></a>
+	<!-- apps menu -->
+		<div id="dropdown-container">
+			<section id="row-one">
+				<a href="#"><img src="images/account.png" name="Account">Account</a>
+				<a href="#"><img src="images/search.png" name="Search">Search</a>
+				<a href="#"><img src="images/maps.png" name="maps">Maps</a>
+			</section>
 			
+			<section id="row-two">	
+				<a href="#"><img src="images/youtube.png" name="YouTube">YouTube</a>
+				<a href="#"><img src="images/play.png" name="play">Play</a>
+				<a href="#"><img src="images/news.png" name="news">News</a>
+			</section>
+
+			<section id="row-three">
+				<a href="#"><img src="images/gmail.png" name="Gmail">Gmail</a>
+				<a href=""><img src="images/contacts.png" name="Contacts">Contacts</a>
+				<a href="#"><img src="images/drive.png" name="Drive">Drive</a>
+			</section>
+
+			<section id="row-four">
+				<a href="#"><img src="images/calendar.png" name="Calendar">Calendar</a>
+				<a href="#"><img src="images/googleplus.png" name="GooglePlus">Google+</a>
+				<a href="#"><img src="images/translate.png" name="Translate">Translate</a>
+			</section>
+
+			<section id="row-five">
+				<a href="#"><img src="images/photos.png" name="Photos">Photos</a>
+			</section>
+		</div>
+	<!-- end of apps menu -->
+			<a href="#"> <img src="images/google-notifications.png" width="26px" height="24px" alt="notifications" name="google-notifications"></a>
+			<a href="#"><button>Sign In</button></a>		
+		</span>
+	</nav>
+	
 	</header>
 
-	<main>
-		<img src="images/google.png" name="google">
-		<input type="search" name="Search">
-		<img src="images/microphone.png" name="Search by voice">
-		<input type="button" name="Google Search">
-		<input type="button" name="I'm Feeling Lucky">
+	<main id="main-content">
+		<img id="google-logo" src="images/google.png" alt="google-logo" name="google">
 		
+		<div id="search-bar">
+			<input id="search-input" type="text" name="search" placeholder="Search Google or type a URL">
+			<img id="microphone" src="images/microphone.png" name="microphone">
+		</div>
+
+		<div class="button-section">
+			<button>Google Search</button>
+			<button>I'm Feeling Lucky</button>
+			
 	</main>
 
-	<footer>
-		<div class="footer">
-		<nav id="bottomleft">
-		<a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000010-0000000001&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
-		
-		<a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
-		</nav>
+	<footer id="main-footer">
+			<span class="footer-left">
+				<a href="#">Advertising</a>
+				<a href="#">Business</a>
+			</span> 
 
-		<nav id="bottomright">
-		<a href="https://policies.google.com/privacy?hl=en&gl=us">Privacy</a>
-		<a href="https://policies.google.com/terms?hl=en&gl=us">Terms</a>
-		<a href="https://www.google.com/preferences?hl=en">Settings</a>
-		</nav>
-		
-	</div>
+			<span class="footer-right">
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="#">Settings</a>
+			</span>
 	</footer>
-
 </body>
 </html>
